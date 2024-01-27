@@ -59,7 +59,7 @@ export async function fetchProducts() {
   const response = await fetch(API_URL, {
     headers: {
       Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWFmZmNkNjFkNTA1ODAwMTgzMDRiYWUiLCJpYXQiOjE3MDYwMzIzNDIsImV4cCI6MTcwNzI0MTk0Mn0.aPP2fBbr4KF0rVEgCIrPhPsfBdmRNMeIDDefd7y4f7k",
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWFmYzVjZTczMjBjNjAwMThiOGYwMjEiLCJpYXQiOjE3MDYwMTgyNTQsImV4cCI6MTcwNzIyNzg1NH0.adHhNogNz7-k_4h2Ybx9AUqGFW2wG1785jJPSzE1d-E",
     },
   });
   const products = await response.json();
