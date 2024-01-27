@@ -20,18 +20,23 @@
     <form id="addProductForm" class="m-5">
       <div class="form-group">
         <label for="productName" class="fs-3 fw-bold">Nome Prodotto</label>
-        <input type="text" placeholder="inserisci nome..." />
+        <input type="text" id="productName" placeholder="inserisci nome..." />
       </div>
       <!-- <div class="form-group">
         <label for="">Descrizione Prodotto</label>
       </div> -->
       <div class="form-group">
-        <label for="productImageURL" class="fs-3 fw-bold"
+        <label for="productImageUrl" class="fs-3 fw-bold"
           >URL immagine Prodotto</label
         >
-        <input type="text" placeholder="inserisci URL-immagine..." />
+        <input
+          type="text"
+          id="productImageUrl"
+          class="form-contol"
+          placeholder="inserisci URL-immagine..."
+        />
       </div>
-      <button type="submit" class="btn bg-warning mt-4">
+      <button type="submit" class="btn bg-warning mt-4 text-black fw-bold">
         Aggiungi Prodotto
       </button>
     </form>
