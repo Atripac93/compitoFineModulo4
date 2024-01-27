@@ -3,6 +3,6 @@ import { renderProductCards, handleAddProductForm } from "./components.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const products = await fetchProducts();
-  renderProductsCards(products);
+  renderProductCards(products);
   handleAddProductForm();
 });
