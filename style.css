@@ -1,3 +1,7 @@
 body{
     background: linear-gradient(rgb(76, 3, 76),rgb(80, 13, 80),rgb(73, 30, 73));
 }
+label{
+    display: block;
+    color: blanchedalmond;
+}
