@@ -1,5 +1,5 @@
-import { fetchProductById, deleteProduct, updateProduct } from "./fetch";
-import { renderProductDetails } from "./components";
+import { fetchProductById, deleteProduct, updateProduct } from "./fetch.js";
+import { renderProductDetails } from "./components.js";
 document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("id");
