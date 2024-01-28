@@ -1,8 +1,13 @@
 import { fetchProductById, deleteProduct, updateProduct } from "./fetch.js";
 import { renderProductDetails } from "./components.js";
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const productId = urlParams.get("id");
+
 document.addEventListener("DOMContentLoaded", async () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get("id");
+  const modification = document.querySelector("#modification");
+  modification.setAttribute(`href`, `./update.html?id=${productId}`);
 
   if (productId) {
     const product = await fetchProductById(productId);
@@ -24,3 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 });
+const deleteHandler = async () => {
+  await deleteProduct(productId);
+};
+const deletedProduct = document.querySelector("#deleteProductBtn");
+deletedProduct.addEventListener("click", deleteHandler);
