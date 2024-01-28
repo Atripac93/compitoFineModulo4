@@ -4,19 +4,16 @@ export function renderProductsCards(products) {
   const productList = document.getElementById("product-list");
   const card = document.createElement("div");
 
-  // productList.innerHTML = "";
   products.forEach((product) => {
-    // const card = document.createElement("div");
     card.classList.add("col-");
-    card.innerHTML += `<div class="card col-md-4">
+    card.innerHTML += `<div class="card col-md-4 mb-4">
             <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
             <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.description}</p>
-                <a href="./details.html?id=${product._id}" class="btn btn-primary">Dettagli</a>
+                <a href="./details.html?id=${product._id}" class="btn bg-warning text-black fw-bold">Vai ai dettagli del prodotto</a>
             </div>
         </div>`;
-    // productList.appendChild(card);
   });
   productList.appendChild(card);
 }
